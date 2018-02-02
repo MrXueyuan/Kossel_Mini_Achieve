@@ -262,12 +262,26 @@ code.language-yaml {
 <blockquote>
 <p><strong>框架</strong></p>
 </blockquote>
-<p>本项目使用欧标铝型材作为整体框架的构建材料，对材料方面较为宽容，且整体结构强度高，拆卸简易快捷，可便携化使用。</p>
+<p>本项目使用欧标铝型材作为整体框架的构建材料，对材料方面较为宽容，且整体结构强度高，拆卸简易快捷，可便携化使用。<br>
+同时，顶角连接件采用3D打印件，大大增加了磨损部件的可更换性。</p>
+<blockquote>
+<p><strong>CAD设计及模型切片</strong></p>
+</blockquote>
+<p>本项目采用<cite> OpenSCAD </cite>作为核心计算机辅助设计工具，<cite> OpenSCAD </cite>是一个 “非主流” 的CAD软件。<br>
+通过代码生成模型的形式，大大提高了程序员的操作性，不必费心费力去学习各种云里雾里的CAD软件。<br>
+同时，<cite> OpenSCAD </cite> 是一个开源软件，可以根据自身需要修改编译，基于GPL v3许可证。</p>
+<p>本项目使用<cite> Slic3r </cite>进行模型切片，即将3D模型文件 .stl 转换为3D打印机固件可以识别的 .gcode 文件。<br>
+<cite> Slic3r </cite>的软件可定制性非常高，可根据需要及算法需求生成必要的支撑结构，打印件打印完毕后通过后期减材加工的方式去除。<br>
+同时，<cite> Slic3r </cite> 是reprap项目的开源软件，根据AGPLv3许可证授权。</p>
 <blockquote>
 <p><strong>末端执行器</strong></p>
 </blockquote>
 <p>整个末端执行器采用散热性能更高的<cite> H散热鳍片 </cite>结构，更好的降低打印时拉丝的可能性。<br>
 同时，挤出机将使用远端挤出的方式，大大降低了末端执行器的重量，使得整体打印精度提升。</p>
+<blockquote>
+<p><strong>工作流程图</strong><br>
+<img src="https://github.com/MrXueyuan/Kossel_Mini_Achieve/blob/master/%E8%AF%B4%E6%98%8E%E6%96%87%E4%BB%B6/3D%E6%89%93%E5%8D%B0%E6%9C%BA%E6%B5%81%E7%A8%8B%E5%9B%BE.jpg?raw=true" alt=""></p>
+</blockquote>
 <h2 class="mume-header" id="%E5%BA%94%E7%94%A8%E6%96%B9%E5%90%91">应用方向</h2>
 
 <p>FDM工艺下，个人组装设计的3D打印机在实际应用中可以作为中低精度需求模型及快速工件打印，特别是Delta结构下，较小的打印件会有较高的打印精度，同时得益于远端挤出机，3D打印机在隔空层打印时拉丝现象会有较大改善。</p>
@@ -275,8 +289,8 @@ code.language-yaml {
 
 <p>目前状况下，3D打印技术更倾向于金属烧结成型、光致成型树脂、生物材料等方向，但是，作为最基础的堆积熔融3D打印技术在技术探索及学习实践方面有着其他技术无可比拟的优势，在不同机械构型及打印技术方面也有一定的前瞻性。3D打印机在嵌入式技术中有着重要的意义，可以为学生提供一个综合性、有拓展空间的平台。</p>
 <hr>
-<p>希望学校可以给予这个项目一定的支持。<br>
-同时，这个项目的实现进展及技术工艺内容，<br>
+<p>希望学校可以给予这个项目一定的支持。</p>
+<p>同时，这个项目的实现进展及技术工艺内容，<br>
 我将会以 GPL3.0 的协议开源在 Github 上。</p>
 <pre class="language-text">    Edit by Visual Studio Code
         Syntax with Markdown
@@ -325,4 +339,3 @@ sidebarTOCBtn.addEventListener('click', function(event) {
 </script>
       
   </html>
-  
