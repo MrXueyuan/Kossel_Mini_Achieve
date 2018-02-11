@@ -6,7 +6,7 @@ module Column (x,y,z) {
                 cylinder (600,340,340,center= true,$fn=3);
             }
             translate (0,0,300) {
-                cylinder (600,300,300,center= true);
+                cylinder (600,300,300,center= true,$fn=27);
             }
         }
     }
@@ -14,10 +14,10 @@ module Column (x,y,z) {
 
 //横柱
 module Beam (x,y,z) {
-    translate ([x,y,z+7.5]) {
+    translate ([x,y,z+15]) {
         difference () {
-            cylinder (15,340,340,center= true,$fn=3);
-            cylinder (15,300,300,center= true,$fn=3);
+            cylinder (30,340,340,center= true,$fn=3);
+            cylinder (30,300,300,center= true,$fn=3);
         }
     }
 }
@@ -25,12 +25,17 @@ module Beam (x,y,z) {
 //打印平台(热床玻璃面板)
 module Platform (x,y,z) {
     translate ([x,y,z]){
-        cylinder (5,170,center=true);
+        cylinder (5,170,center=true,$fn=16);
     }
 }
 
-Beam(0,0,0);
-Column(0,0,300);
-Beam(0,0,600);
-Beam(0,0,-7.5);
-Platform(0,0,20);
+
+module main () {
+    Beam (0,0,0);
+    Column (0,0,300);
+    Beam (0,0,600);
+    Beam (0,0,-30);
+    Platform (0,0,30);
+}
+
+main();
