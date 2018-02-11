@@ -51,7 +51,7 @@
 同时，<cite> OpenSCAD </cite> 是一个开源软件，可以根据自身需要修改编译，基于GPL v3许可证。
 
 通过简单高效的 <cite> OpenSCAD </cite> 脚本去绘制3D模型：
-![](https://github.com/MrXueyuan/Kossel_Mini_Achieve/blob/master/%E8%AF%B4%E6%98%8E%E6%96%87%E4%BB%B6/OpenSCAD%20CheatSheet.jpg?raw=true)
+![](https://github.com/MrXueyuan/Kossel_Mini_Achieve/blob/master/Documentation/OpenSCAD%20CheatSheet.jpg?raw=true)
 
 本项目使用<cite> Slic3r </cite>进行模型切片，即将3D模型文件 .stl 转换为3D打印机固件可以识别的 .gcode 文件。
 <cite> Slic3r </cite>的软件可定制性非常高，可根据需要及算法需求生成必要的支撑结构，打印件打印完毕后通过后期减材加工的方式去除。虽然每个版本都有一定的Bug，但不影响使用。
@@ -69,7 +69,7 @@
 
 >__工作流程图__
 
-![](https://github.com/MrXueyuan/Kossel_Mini_Achieve/blob/master/%E8%AF%B4%E6%98%8E%E6%96%87%E4%BB%B6/3D%E6%89%93%E5%8D%B0%E6%9C%BA%E6%B5%81%E7%A8%8B%E5%9B%BE.jpg?raw=true)
+![](https://github.com/MrXueyuan/Kossel_Mini_Achieve/blob/master/Documentation/Flowchart.jpg?raw=true)
 
 ## 应用方向
 FDM工艺下，个人组装设计的3D打印机在实际应用中可以作为中低精度需求模型及快速工件打印，特别是Delta结构下，较小的打印件会有较高的打印精度，同时得益于远端挤出机，3D打印机在隔空层打印时拉丝现象会有较大改善。
