@@ -1,53 +1,53 @@
-# Kossel Mini.bom
+# Mini Kossel Bill of Materials
 
-## 3D打印零件
-	x1	热端风扇附加框架
-	x1	末端执行器：E3D v6挤出头结构体
-	x1	挤出机：	Titan挤出器打印结构体
-	x1	Z轴伸缩调平
-	x2	电源支架
-	x3	顶部顶点连接角
-	x3	底部顶点连接角
-	x3	并联臂滑块
-	x6	行程触发器 (轻触开关)
-	x3	打印平面架
-	$可以通过发送邮件向开源项目维护者Jahann索取 <johann@rocholl.net>
-	$需要在完成Kossel系列的打印机后打印hotend_fan.stl,plate_1x.stl,plate_3x.stl两份兹磁项目
+## 3D Printed parts
+	x1	Hotend fan which also serves to attach the hotend
+	x1	End effector:	E3D v6 Effector
+	x1	Extruder:	Titan Extruder
+	x1	Retractable Z probe
+	x2	Power supply bracket
+	x3	Top vertex
+	x3	Bottom vertex
+	x3	Vertical carriage
+	x6	Endstop holder (Touch switch)
+	x3	Print surface holder
+	$Can be obtained by sending mail to the open source project maintainer Jahann <johann@rocholl.net>
+	$You nees to print two (2) Mini Kossel kits and also give them away for free.
 	
-## 框架
-	x3	垂直框架	600mm欧标1515铝型材
-	x9	平行框架	240mm欧标1515铝型材
-	x1	加工平面	170mm圆形玻璃板
-	$线下购买价格较为合适
+## Frame
+	x3	Vertical	600mm OpenBeam or Misumi HFS3-1515
+	x9	Horizontal	240mm OpenBeam or Misumi HFS3-1515
+	x1	Platform	170mm round glass
+	$Offline purchase fair price
 	
-## 连接紧固件
-	x100	M3*8mm螺丝	(普通平头)
-	x100	M3螺母	(可选垫片)
-	x100	M3圆顶螺母	(可选垫片)
-	x6	M3*20mm螺丝		框架连接到垂直滑架
-	x12	M3*25mm螺丝		皮带轮和末端执行器连接杆附件
-	x6	M3*35mm螺丝		皮带松紧器
-	x50	M3*6mm螺丝		连接导轨及挤出机
-	x12	M3*16mm螺丝		推杆附件
-	x6	M2.5*12mm螺丝	微动开关安装	(电脑小螺丝)
-	x3	M2.5*16mm螺丝	Auto调平开关安装(电脑小螺丝)
-	$一起购买更合适
+## Fasteners
+	x100	M3x8mm stainless steel screws	(frame and most connections)
+	x100	M3 stainless steel nuts
+	x100	M3 nyloc nuts
+	x6	M3x20mm stainless steel screws (arm attachment to vertical carriage)
+	x12	M3x25mm stainless steel screws (belt idlers and effector-rod attachments)
+	x6	M3x35mm stainless steel screws (tensioners)
+	x50	M3x6mm stainless steel screws (rail attachment to extrusions - 8mm is too long!)
+	x12	M3x16mm stainless steel screws (push rod attachment)
+	x6	M2.5x12mm screws (micro switches)
+	x3	M2.5x16mm (automatic bed leveling probe)
+	$It's more appropriate to buy together
 	
-## 运动模组
-	x3	400mm滑块及其滑轨 HIWIN MGN-12H
-	x3	1164mm GT2皮带 间距2mm 宽度6mm
-	x6	F623ZZ法兰盘轴承 3*10*4mm
-	x3	GT2皮带滑轮 16齿 齿间距2mm 宽度6/6.5mm
-	x3	NEMA17 42mm 步进电机
-	$滑块滑轨需要买好一点的，提高精度
+## Motion Module
+	x3	400mm hardened steel rail and carriages HIWIN MGN-12H
+	x3	1164mm GT2 belt closed loop with 2mm pitch and 6mm
+	x6	F623ZZ flanged bearings 3x10x4mm (or F684ZZ 4x9x4mm for printed parts before June 21st)
+	x3	GT2 pulley with 16 teeth and 2mm pitch
+	x3	Kysan NEMA17 stepper motor
+	$Hardened steel rail and carriages need to buy a little better,Improve accuracy.
 
-## 并联臂推杆
-	x12	Traxxas 5347杆端	(M4鱼眼轴承连接杆)
-	x12	M4*20mm螺丝
-	x6	180mm碳管 内径4mm
-	$很贵的一部分
+## Diagonal push rods
+	x12	Traxxas 5347 rod ends
+	x12	M4x20mm set screws
+	x6	180mm Carbon tube ID=4mm
+	$A very expensive part.
 	
-## 挤出机及末端执行器
+## Bowden
 	挤出头
 	x1	J-Head Hotend 0.5mm，适合1.75mm PLA/ABS 打印材料
 	x1	透明PFA管 外径4mm 内径2mm
