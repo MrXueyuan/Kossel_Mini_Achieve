@@ -48,52 +48,52 @@
 	$A very expensive part.
 	
 ## Bowden
-	挤出头
-	x1	J-Head Hotend 0.5mm，适合1.75mm PLA/ABS 打印材料
-	x1	透明PFA管 外径4mm 内径2mm
-	x2	M5螺纹气体快速连接器 内径4mm
-	材料输送
-	x1	NEMA17 42mm 步进电机 集成行星变速箱 比例：5.18:1
-	x1	直齿轮 22齿 12mm外径 8mm内径
-	x3	M3-0.5*25mm带帽螺丝
-	x3	M3垫片
-	惰轮
-	x1	625滚珠轴承 5*16*5mm
-	x1	M5-0.8x20mm带帽螺丝
-	x1	M5垫片
-	x1	M5-0.8六角螺母
-	x1	M3-0.5*16mm带帽螺丝
-	x1	M3垫片
-	x1	M3-0.5六角螺母
-	$总结起来可以买成品 E3D v6挤出头 Titan挤出机
-	$一大堆部件太多了，直接淘宝买吧
+	Effector
+	x1	J-Head Hotend 0.5mm for 1.75mm filament
+	x1	Clear PFA tubing ID=2mm OD=4mm
+	x2	Push fit connector ID=4mm with M5 thread 
+	Material conveying
+	x1	NEMA-17 motor with an integrated Planetary gearbox with a 5 2/11 :1 ratio
+	x1	Spur Gear, 22 Tooth, OD=12mm, ID=8mm
+	x3	M3-0.5x25 Cap Screw
+	x3	M3 Washer
+	Idler
+	x1	625 ball bearing (5x16x5)
+	x1	M5-0.8x20 Cap Screw
+	x1	M5 Washer
+	x1	M5-0.8 Hex Nut (Nylock optional)
+	x1	M3-0.5x16 Cap Screw
+	x1	M3 Washer
+	x1	M3-0.5 Hex Nut, Nylock
+	$Summed up can buy the finished product E3D v6 Effector Titan Extruder
+	$There are too many parts, just buy Taobao or NewEgg
 	
-## 机械限位开关
-	x3	欧姆龙微动或Honeywell微动	鼠标微动，带弹片
-	$随便咯，可靠就行
+## Endstops
+	x3	Omron SS-5 micro switch or Honeywell ZM10B10A01
+	$Whatever, just be reliable.
 
-## Auto调平
-	||FSR压力传感器方案
-	x3	压力传感器
-	x3	压力传感器垫片
-	||调平Z轴探针
-	x1	微动开关
-	x1	1.5mm内六角扳手
-	x1	2.5mm安全销
-	x2	圆珠笔弹簧
-	x1	欧式接线端子
-	x1	热缩管 内径2mm
-	||接近传感器
-	x1	PNP电感式接近传感器	LJ12A3-4-Z/BY
-	x1	安装支架
-	$三选一，建议FSR方案，接近传感器方案程序比较难写但效果不错
+## Automatic Bed Leveling Options
+	||FSR(force sensitive resistor)
+	x3	FSR circular pads
+	x3	mounts for fsr pads
+	||Bed leveling probe
+	x1	Micro switch (same as for endstops above)
+	x1	Bondhus 1.5mm allen wrench
+	x1	Safety pin with 2.5mm loop
+	x2	Ball point pen spring
+	x1	 Euro-style terminal block connector
+	x1	Heat shrink tubing ID=2mm
+	||Proximity Sensor
+	x1	PNP Inductive proximity sensor
+	x1	mount for your specific effector/carriage
+	$Choose one of the three, suggest FSR 
 	
 ***
 
-## 其他的一些部件
-	RepRap接口控制
+## Other
+	Electronics setup RepRap Interface Standard
 	12V5A Power
-	散热风扇
+	1x 3010 DC Fan and 1x 4515 Blower Fan
 	
 	
 	
