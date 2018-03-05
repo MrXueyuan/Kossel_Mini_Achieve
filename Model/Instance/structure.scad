@@ -1,3 +1,6 @@
+include <Definition.scad>
+include <Radiator.scad>
+
 //支柱
 module Column (x,y,z) {
     translate ([x,y,z]) {
@@ -24,11 +27,50 @@ module Beam (x,y,z) {
 
 //打印平台(热床玻璃面板)
 module Platform (x,y,z) {
-    translate ([x,y,z]){
-        cylinder (5,170,center=true,$fn=16);
+    translate ([x,y,z]) {
+        cylinder (5,170,170,center=true,$fn=16);
     }
 }
 
+module Hot_end (x,y,z) {
+    translate ([x,y,z]) {
+        difference () {
+            rotate ([0,0,0]) {
+                difference () {
+                    Three_Prism (5,100);
+                    rotate ([0,0,0]) {
+                        translate([80,0,0]){
+                            rotate ([0,0,0]){
+                                cube ([80,80,80],center=true);
+                            }
+                        }
+                    }
+                    rotate ([0,0,120]) {
+                        translate([80,0,0]){
+                            rotate ([0,0,270]){
+                                cube ([80,80,80],center=true);
+                            }
+                        }
+                    }
+                    rotate ([0,0,240]) {
+                        translate([80,0,0]){
+                            rotate ([0,0,90]){
+                                cube ([80,80,80],center=true);
+                            }
+                        }
+                    }
+                }
+
+                Radiator (0,0,5);
+
+                translate ([0,0,-10]) {
+                    cylinder (20,0,20,center=true,$fn=16);
+                }
+            }
+            cylinder (200,0.4,0.4,center=true,$fn=16);
+        }
+    }
+}
 
 module main () {
     Beam (0,0,0);
@@ -36,6 +78,8 @@ module main () {
     Beam (0,0,600);
     Beam (0,0,-30);
     Platform (0,0,30);
+    Hot_end (0,0,315);
 }
 
-main();
+main ();
+
