@@ -72,6 +72,10 @@ module Hot_end (x,y,z) {
     }
 }
 
+module Putting (x,y,z) {
+    Rod (200,2,3);
+}
+
 module main () {
     Beam (0,0,0);
     Column (0,0,300);
@@ -81,5 +85,7 @@ module main () {
     Hot_end (0,0,315);
 }
 
-main ();
+//main ();
+
+Putting (0,0,0);
 

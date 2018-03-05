@@ -6,3 +6,15 @@ module Three_Prism (hight,edges) {
     }
 }
 
+//Rod (长，外径，内径)
+module Rod (length,OD,ID) {
+    if (OD > ID) {
+        difference () {
+            cylinder (length,OD,OD,center=true,$fn=16);
+            cylinder (length,ID,ID,center=true,$fn=16);
+        }
+    }
+    else {
+        echo ("Err: OD can't less ID ! ! !");
+    }
+}
