@@ -73,7 +73,50 @@ module Hot_end (x,y,z) {
 }
 
 module Putting (x,y,z) {
-    Rod (200,2,3);
+    translate ([x,y,z]) {
+        rotate ([0,0,0]) {
+            translate ([80,0,0]) {
+                rotate ([0,60,0]){
+                    translate ([0,0,90]) {
+                        translate ([0,10,0]) {
+                            Rod (315,6,4);
+                        }
+                        translate ([0,-10,0]) {
+                            Rod (315,6,4);
+                        }
+                    }
+                }
+            }
+        }
+        rotate ([0,0,120]) {
+            translate ([80,0,0]) {
+                rotate ([0,60,0]){
+                    translate ([0,0,90]) {
+                        translate ([0,10,0]) {
+                            Rod (315,6,4);
+                        }
+                        translate ([0,-10,0]) {
+                            Rod (315,6,4);
+                        }
+                    }
+                }
+            }
+        }
+        rotate ([0,0,240]) {
+            translate ([80,0,0]) {
+                rotate ([0,60,0]){
+                    translate ([0,0,90]) {
+                        translate ([0,10,0]) {
+                            Rod (315,6,4);
+                        }
+                        translate ([0,-10,0]) {
+                            Rod (315,6,4);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 module main () {
@@ -83,9 +126,9 @@ module main () {
     Beam (0,0,-30);
     Platform (0,0,30);
     Hot_end (0,0,315);
+    Putting (0,0,345);
 }
 
-//main ();
+main ();
 
-Putting (0,0,0);
 
