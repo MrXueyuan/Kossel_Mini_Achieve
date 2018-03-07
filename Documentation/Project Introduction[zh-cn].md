@@ -35,9 +35,9 @@
 直接使用直线插值来减少运算量 ;-)
 
     delta[X_AXIS] = sqrt(delta_diagonal_rod_2 
-    - sq(delta_tower1_x-cartesian[X_AXIS])
-    - sq(delta_tower1_y-cartesian[Y_AXIS])) 
-    + cartesian[Z_AXIS]; 
+                    - sq(delta_tower1_x-cartesian[X_AXIS])
+                    - sq(delta_tower1_y-cartesian[Y_AXIS])) 
+                    + cartesian[Z_AXIS]; 
 
 > __框架__
 
@@ -79,9 +79,8 @@ FDM工艺下，个人组装设计的3D打印机在实际应用中可以作为中
 
 ___
 
-希望学校可以给予这个项目一定的支持。
 
-同时，这个项目的实现进展及技术工艺内容，
+这个项目的实现进展及技术工艺内容，
 我将会以 GPL3.0 的协议开源在 Github 上。
 
         Edit by Visual Studio Code
