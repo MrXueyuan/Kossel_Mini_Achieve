@@ -1,5 +1,6 @@
 include <Definition.scad>
 include <Radiator.scad>
+include <Motor.scad>
 
 //支柱
 module Column (x,y,z) {
