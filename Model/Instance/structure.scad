@@ -16,6 +16,7 @@ module Column (x,y,z) {
     }
 }
 
+
 //横柱
 module Beam (x,y,z) {
     translate ([x,y,z+15]) {
@@ -36,7 +37,7 @@ module Platform (x,y,z) {
 module Hot_end (x,y,z) {
     translate ([x,y,z]) {
         difference () {
-            rotate ([0,0,0]) {
+            union () {
                 difference () {
                     Three_Prism (5,100);
                     rotate ([0,0,0]) {
@@ -130,6 +131,8 @@ module main () {
     Putting (0,0,345);
 }
 
-main ();
+//main ();
 
+
+42Motor (0,0,0);
 
