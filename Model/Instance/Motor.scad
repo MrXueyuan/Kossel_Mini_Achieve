@@ -15,6 +15,29 @@ module Axis (x,y,z) {
 
 module 42Motor (x,y,z) {
     translate ([x, y, z]) {
-        Axis (0,0,0);
+        Axis (0,0,19);
+        difference () {
+            cube(size=[42.5, 42.5, 38], center=true);
+            rotate ([0,0,45]) {
+                translate([30,0,0]){
+                    cube ([8,8,80],center=true);
+                }
+            }
+            rotate ([0,0,135]) {
+                translate([30,0,0]){
+                    cube ([8,8,80],center=true);
+                }
+            }
+            rotate ([0,0,-45]) {
+                translate([30,0,0]){
+                    cube ([8,8,80],center=true);
+                }
+            }
+            rotate ([0,0,-135]) {
+                translate([30,0,0]){
+                    cube ([8,8,80],center=true);
+                }
+            }
+        }
     }
 }

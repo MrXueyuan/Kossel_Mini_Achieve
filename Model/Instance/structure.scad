@@ -121,6 +121,12 @@ module Putting (x,y,z) {
     }
 }
 
+module MotorPark (x,y,z,r) {
+    rotate ([0,90,r]) {
+        42Motor (x,y,z);
+    }
+}
+
 module main () {
     Beam (0,0,0);
     Column (0,0,300);
@@ -129,10 +135,11 @@ module main () {
     Platform (0,0,30);
     Hot_end (0,0,315);
     Putting (0,0,345);
+    MotorPark (0,0,240,0);
+    MotorPark (0,0,240,120);
+    MotorPark (0,0,240,-120);
 }
 
-//main ();
+main ();
 
-
-42Motor (0,0,0);
 
