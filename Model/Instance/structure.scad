@@ -70,6 +70,9 @@ module Hot_end (x,y,z) {
                 }
             }
             cylinder (200,0.4,0.4,center=true,$fn=16);
+            translate ([0, 0, 100]) { 
+                cylinder (200,1.75,1.75,center=true,$fn=16);
+            }
         }
     }
 }
