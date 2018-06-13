@@ -34,6 +34,7 @@ module Platform (x,y,z) {
     }
 }
 
+//打印机挤出头
 module Hot_end (x,y,z) {
     translate ([x,y,z]) {
         difference () {
@@ -76,6 +77,7 @@ module Hot_end (x,y,z) {
         }
     }
 }
+
 
 module Putting (x,y,z) {
     translate ([x,y,z]) {
@@ -124,6 +126,7 @@ module Putting (x,y,z) {
     }
 }
 
+//马达
 module MotorPark (x,y,z,r) {
     rotate ([0,90,r]) {
         42Motor (x,y,z);
