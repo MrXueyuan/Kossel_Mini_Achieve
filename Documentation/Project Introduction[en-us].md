@@ -1,31 +1,31 @@
-关于实现Delta结构中等精度低成本3D打印机的项目简介
+About to build Kossel_Mini 3D Printer Plan
 =====
 ***
-## 概述
-本项目目的在于构建一台有高度可复制性可定制性的3D打印机，3D打印机结构为Delta结构，在小部件打印上拥有优于同成本笛卡尔结构、SCARA结构和Core/H-Bot结构的打印精度，同时在大型部件打印上有着较快的打印速度。
-> __设计目标__
-> * 打印技术：堆积熔融 Fused Deposition Modeling（FDM）
-> * 物理结构：Delta
-> * 控制器：应用于RAMPS 1.4平台的Arduino Mega2560
-> * 控制固件：Marlin固件
-> * 运动方式：打印件固定，α/β/γ三轴运动
-> * 速度：α/β/γ 单轴320mm/s
-> * 最低分辨率：α/β/γ 单轴50步/mm
-> * 最大分辨率：α/β/γ 单轴300步/mm
-> * 重复性：优于0.03mm（30μm）
-> * 挤出头孔径：0.4mm (可替换)
-> * 打印层厚：0.05mm-4mm
-> * 可打印体积：圆柱体，直径170mm，高度240mm
-> * 框架体积：三棱柱，边长300mm，高度600mm
-> * 打印表面：可加热直径170mm圆形玻璃，不可移动
-> * 挤出机结构：远端挤出
-> * 末端执行器质量：小于50克
-> * 硬件成本：低于1000￥ <cite>[RMB]</cite>
-> * 自动水平校准（自动调平）
+## Overview
+This project is to build a 3D printer with highly replicable and customizable nature,the 3D printer structure is the delta structure,it has better printing accuracy than the same cost Cartesian structure, Scara structure and core/h-bot structure in the small part printing,and also has a faster printing speed on large part printing.
+> __Technical Index__
+> * Technology：Fused Deposition Modeling（FDM）
+> * Structure：Delta
+> * Controller：Arduino Mega2560 applied to ramps 1.4 platform
+> * Firmware：Marlin Firmware
+> * Move mode：α/β/γ Three-axis motion ,Print Parts Fixed.
+> * Speed：α/β/γ 320mm/s·axis
+> * Min Resolution：α/β/γ 50 Step/mm·axis
+> * Max Resolution：α/β/γ 300 Step/mm·axis
+> * Precision：Better than 0.3mm（300μm）
+> * Printer head Aperture：0.4mm (Can change)
+> * Print layer Thickness：0.05mm-4mm
+> * Printable volume：Cylinder，Diameter 170mm，Height 240mm
+> * Frame Volume：Three Prism，Edges 300mm，Height 600mm
+> * Print surface：Hot, Diameter 170mm Round Glass，Not removable
+> * Extruding machine Structure：Remote output
+> * End Actuator Weight：Less than 50 grams
+> * Hardware costs：Below 1000￥ <cite>[RMB]</cite>
+> * Automatic horizontal calibration (automatic leveling)
 >>***
 
-## 项目分析
-> __算法__
+## Project analysis
+> __Algorithm__
 
 本项目所使用的Delta结构是一种rostock结构变体，这是一种通过3个空间平行并联臂进行运动的结构。
 通过将笛卡尔(正交)坐标系运动参数转换为并联臂高度参数，对末端执行器进行移动，达到打印3D物品的目的。
@@ -79,7 +79,6 @@ FDM工艺下，个人组装设计的3D打印机在实际应用中可以作为中
 
 ___
 
-希望学校可以给予这个项目一定的支持。
 
 同时，这个项目的实现进展及技术工艺内容，
 我将会以 GPL3.0 的协议开源在 Github 上。
