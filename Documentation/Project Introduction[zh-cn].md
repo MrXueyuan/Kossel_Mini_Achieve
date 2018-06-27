@@ -72,7 +72,8 @@
 ![](https://github.com/MrXueyuan/Kossel_Mini_Achieve/blob/master/Documentation/Flowchart.jpg?raw=true)
 
 >__运动结构示意图__
-![]()
+
+![](https://github.com/MrXueyuan/Kossel_Mini_Achieve/blob/master/Documentation/Delta.gif?raw=true)
 
 ## 应用方向
 FDM工艺下，个人组装设计的3D打印机在实际应用中可以作为中低精度需求模型及快速工件打印，特别是Delta结构下，较小的打印件会有较高的打印精度，同时得益于远端挤出机，3D打印机在隔空层打印时拉丝现象会有较大改善。
@@ -83,8 +84,8 @@ FDM工艺下，个人组装设计的3D打印机在实际应用中可以作为中
 ___
 
 
-这个项目的实现进展及技术工艺内容，
-我将会以 GPL3.0 的协议开源在 Github 上。
+该项目的实现进展及技术工艺内容，
+    以 GPL3.0 的协议开源于 Github 。
 
         Edit by Visual Studio Code
             Syntax with Markdown
