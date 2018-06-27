@@ -71,6 +71,9 @@
 
 ![](https://github.com/MrXueyuan/Kossel_Mini_Achieve/blob/master/Documentation/Flowchart.jpg?raw=true)
 
+>__运动结构示意图__
+![]()
+
 ## 应用方向
 FDM工艺下，个人组装设计的3D打印机在实际应用中可以作为中低精度需求模型及快速工件打印，特别是Delta结构下，较小的打印件会有较高的打印精度，同时得益于远端挤出机，3D打印机在隔空层打印时拉丝现象会有较大改善。
 
