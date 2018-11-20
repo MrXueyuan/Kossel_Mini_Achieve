@@ -16,7 +16,6 @@ module Column (x,y,z) {
     }
 }
 
-
 //横柱
 module Beam (x,y,z) {
     translate ([x,y,z+15]) {
